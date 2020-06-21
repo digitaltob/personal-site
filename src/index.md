@@ -1,12 +1,15 @@
 ---
 layout: home
-title: A simple starter kit for Eleventy
-postsHeading: Latest posts
-archiveButtonText: See all posts
-metaDesc: 'Hylia is a lightweight Eleventy starter kit to help you to create your own blog or personal website.'
+title: Helping businesses create accessible, mobile friendly, fast loading websites.
+postsHeading: Recent articles
+archiveButtonText: See all articles
 socialImage: ''
+introCta1Btn: 'More about me'
+introCta1Url: '/about'
+introCta2Btn: "Let's work together"
+introCta2Url: '/contact'
 ---
+I’m a UK based front end developer & optimisation consultant with 15 years commercial experience working with a range of large companies and digital agencies.
 
-Hylia is a lightweight [Eleventy](https://11ty.io) starter kit with [Netlify CMS](https://www.netlifycms.org/) pre-configured, so that you can one-click install a progressive, accessible blog in minutes. It also gives you a well organised starting point to extend yourself. It’s by [Andy Bell](https://twitter.com/hankchizljaw) and [friends](https://github.com/aarongustafson/hylia/graphs/contributors).
+Let me help you build effective websites that convert.
 
-Get started now by [deploying Hylia to Netlify.](https://app.netlify.com/start/deploy?repository=https://github.com/hankchizljaw/hylia&stack=cms)

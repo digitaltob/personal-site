@@ -1,5 +1,5 @@
 .intro {
-  background: var(--color-theme-highlight-block);
+  background-image: linear-gradient(135deg, #23526C 0%, #3781A9 100%);
 
   &__summary {
     --flow-space: #{get-size(500)};
@@ -12,11 +12,15 @@
         text-decoration: none;
       }
     }
+
+    p {
+      color: var(--color-white1);
+    }
   }
 
   &__heading {
     max-width: 40ex;
-    color: var(--color-theme-feature-text);
+    color: var(--color-white1);
 
     &--compact {
       max-width: 20ex;

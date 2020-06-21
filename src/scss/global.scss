@@ -4,7 +4,7 @@
 @import '../../node_modules/stalfos/stalfos.scss';
 
 // Local mixins
-@import 'mixins/dark-mode';
+//@import 'mixins/dark-mode';
 
 @import 'theme';
 
@@ -74,3 +74,9 @@ img {
 @import 'components/skip-link';
 @import 'components/syntax-highlighting';
 @import 'components/video-player';
+
+@import 'components/services';
+@import 'components/testimonials';
+@import 'components/brands';
+@import 'components/home-intro';
+

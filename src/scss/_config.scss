@@ -28,9 +28,11 @@ $stalfos-util-prefix: 'sf-';
  * Various misc metrics to use around the site
  */
 $metrics: (
-  'wrap-max-width': 58rem,
-  'wrap-inner-max-width': 52rem,
-  'md-breakpoint': 48rem
+  'wrap-max-width': 75rem,
+  'wrap-inner-max-width': 75rem,
+  'sm-breakpoint': 48rem,
+  'md-breakpoint': 62rem,
+  'lg-breakpoint': 75rem
 );
 
 /**
@@ -75,12 +77,12 @@ $stalfos-config: (
   ),
   'gap-top': (
     'items': $stalfos-size-scale,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-top'
   ),
   'gap-bottom': (
     'items': $stalfos-size-scale,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-bottom'
   ),
   'leading': (
@@ -103,17 +105,17 @@ $stalfos-config: (
   ),
   'pad-top': (
     'items': $stalfos-size-scale,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-top'
   ),
   'pad-bottom': (
     'items': $stalfos-size-scale,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-bottom'
   ),
   'pad-left': (
     'items': $stalfos-size-scale,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-left'
   ),
   'space': (
@@ -171,7 +173,9 @@ $stalfos-config: (
     'property': 'width'
   ),
   'breakpoints': (
-    'md': #{'(min-width: ' + map-get($metrics, 'md-breakpoint') + ')'}
+    'sm': #{'(min-width: ' + map-get($metrics, 'sm-breakpoint') + ')'},
+    'md': #{'(min-width: ' + map-get($metrics, 'md-breakpoint') + ')'},
+    'lg': #{'(min-width: ' + map-get($metrics, 'lg-breakpoint') + ')'}
   ),
   'utilities': (
     'reset': 'on',
