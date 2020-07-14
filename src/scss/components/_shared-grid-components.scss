@@ -1,0 +1,68 @@
+.img-alexa {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+}
+
+.img-packt {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+
+.img-skyscanner {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+}
+
+.two-four-wrapper, .four-two-wrapper {
+    display: grid;
+    place-items: center;
+}
+.img-rsd {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.img-icon {
+    width: 150px;
+    height: 150px;
+}
+
+@media (min-width: 768px) {
+    .two-four-wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        .two-container { grid-area: 1 / 1 / 2 / 3; }
+        .four-container { grid-area: 1 / 3 / 2 / 7; }
+
+        p {
+            padding: 0 0 20px 0;
+        }
+    }
+
+    .four-two-wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        .four-container { grid-area: 1 / 1 / 2 / 5; }
+        .two-container { grid-area: 1 / 5 / 2 / 7; }
+
+        p {
+            padding: 0 0 20px 0;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+}

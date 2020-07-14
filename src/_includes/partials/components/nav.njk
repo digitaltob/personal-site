@@ -1,6 +1,9 @@
 {% if navigation.items %}
+
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <nav class="nav" aria-label="{{ariaLabel}}">
-    <ul class="[ nav__list ] [ box-flex align-center sm:space-before ]">
+    <ul class="[ nav__list ] [ sm:box-flex align-center sm:space-before ]">
       {% for item in navigation.items %}
         {% set relAttribute = '' %}
         {% set currentAttribute = '' %}
@@ -20,3 +23,5 @@
     </ul>
   </nav>
 {% endif %}
+
+

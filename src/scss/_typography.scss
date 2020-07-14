@@ -1,11 +1,22 @@
-/* Main Text - Open Sans - 400 */
+/* Main Text - Lato - 400 */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Lato';
+  font-weight: normal;
   font-style: normal;
-  font-weight: 500;
   font-display: swap;
-  src: local('Open Sans'), local('Open Sans'),
-    url('/fonts/OpenSans-Regular.woff') format('woff');
+  src: local('Lato'), local('Lato'),
+    url('/fonts/Lato-Regular.woff2') format('woff2'),
+    url('/fonts/Lato-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LatoBold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: local('LatoBold'), local('LatoBold'),
+    url('/fonts/Lato-Bold.woff2') format('woff2'),
+    url('/fonts/Lato-Bold.woff') format('woff');
 }
 
 /* Main Text - Crete Round - 600 */
@@ -61,6 +72,12 @@ h4 {
     border-bottom: 3px solid #CF7310;
     padding: 7px 15px;
    }
+}
+
+strong {
+  font-family: 'LatoBold';
+  font-weight: 700;
+  font-style: normal;
 }
 
 .heading-bg {

@@ -1,22 +1,81 @@
 {% extends 'layouts/base.njk' %}
-
+{# Grab other posts that aren’t this one for the 'more from the blog' feed #}
+{% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
 {# Intro content #}
 {% set introHeading = title %}
 {% set introSummary %}
-<p class="[ intro__meta ] [ text-500 leading-tight ]">
-  {% if date %}
-    <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
+<div class="summary-post">
+  {% if subheading %}
+  <div class="summary-text">
+    <p class="text-600">{{ subheading }}</p>
+  </div>
   {% endif %}
-  <span>— {{ helpers.getReadingTime(content) }} minute read</span>
-</p>
+  <div class="summary-meta">
+    <dl class="[ intro__meta meta-post ] [ text-500 leading-tight ]">
+    {% if date %}
+      <dt>
+        <span class="visually-hidden">Published Date</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M24 2v22h-24v-22h3v1c0 1.103.897 2 2 2s2-.897 2-2v-1h10v1c0 1.103.897 2 2 2s2-.897 2-2v-1h3zm-2 6h-20v14h20v-14zm-2-7c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2zm-14 2c0 .552-.447 1-1 1s-1-.448-1-1v-2c0-.552.447-1 1-1s1 .448 1 1v2zm6.687 13.482c0-.802-.418-1.429-1.109-1.695.528-.264.836-.807.836-1.503 0-1.346-1.312-2.149-2.581-2.149-1.477 0-2.591.925-2.659 2.763h1.645c-.014-.761.271-1.315 1.025-1.315.449 0 .933.272.933.869 0 .754-.816.862-1.567.797v1.28c1.067 0 1.704.067 1.704.985 0 .724-.548 1.048-1.091 1.048-.822 0-1.159-.614-1.188-1.452h-1.634c-.032 1.892 1.114 2.89 2.842 2.89 1.543 0 2.844-.943 2.844-2.518zm4.313 2.518v-7.718h-1.392c-.173 1.154-.995 1.491-2.171 1.459v1.346h1.852v4.913h1.711z"/>
+        </svg>
+      </dt>
+      <dd>
+          <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
+      </dd>
+    {% endif %}
+      <dt>
+        <span class="visually-hidden">Reading time</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M13 12l-.688-4h-.609l-.703 4c-.596.347-1 .984-1 1.723 0 1.104.896 2 2 2s2-.896 2-2c0-.739-.404-1.376-1-1.723zm-1-8c-5.522 0-10 4.477-10 10s4.478 10 10 10 10-4.477 10-10-4.478-10-10-10zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-2-19.819v-2.181h4v2.181c-1.438-.243-2.592-.238-4 0zm9.179 2.226l1.407-1.407 1.414 1.414-1.321 1.321c-.462-.484-.964-.926-1.5-1.328z"/>
+        </svg>
+      </dt>
+      <dd>
+        <span class="time-read">{{ helpers.getReadingTime(content) }} minute read</span>
+      </dd>
+    {% if tags %}
+      <dt>
+        <span class="visually-hidden">Categories/Tags</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M9.776 2l11.395 11.395-7.78 7.777-11.391-11.391v-7.781h7.776zm.829-2h-10.605v10.609l13.391 13.391 10.609-10.604-13.395-13.396zm-3.191 7.414c-.781.782-2.046.782-2.829.001-.781-.783-.781-2.048 0-2.829.782-.782 2.048-.781 2.829-.001.782.783.781 2.047 0 2.829z"/>
+        </svg>
+      </dt>
+      <dd>
+          {% for item in tags %}
+            <a href="/tags/{{ item }}">{{ item }}</a>
+          {% endfor %}
+      </dd>
+    {% endif %} 
+    </dl>
+  </div>   
+</div>
 {% endset %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">
     <article class="[ post ] [ h-entry ]">
       {% include "partials/components/intro.njk" %}
-      <div class="[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-900 {{ 'pad-bottom-900' if not site.enableThirdPartyComments }} text-500 ] [ sf-flow ] [ e-content ]">
+      <div class="[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-900 {{ 'pad-bottom-900' if not site.enableThirdPartyComments }} text-500 ] [ e-content ]">
+        <div class="inner-wrapper-text [ sf-flow ] ">
         {{ content | safe }}
+        </div>
+      </div>
+      <div class="[ inner-wrapper ]">
+        <div class="post-newsletter">
+          <h2>Thanks for reading</h2>
+          <p class="text-600">If you enjoyed reading this, <strong>join my newsletter</strong> and periodically I'll email you a <strong>collection of my latest articles</strong>. You'll also get an <strong>exclusive discount</strong> on my courses coming later in the year.</p>
+          <p><a class="button primary" href="https://mailchi.mp/877e42635e8c/newsletter" target="_blank" rel="noreferrer noopener">Join the newsletter</a></p>
+        </div>
+      </div>
+      <div class="[ inner-wrapper ]">
+        <div class="post-author">
+        <p class="pad-bottom-300 gap-top-500">Written by:</p>
+          <div class="author-heading">
+            <img class="img-author" src="/images/imagery/terry-photo.png">
+            <h3>Terry O'Brien</h3>
+          </div>
+        <p class="text-500">Helping businesses create accessible, mobile friendly, fast websites. If I can help <strong>you</strong>, get in touch for a chat. </p>
+        <p><a class="button primary" href="/contact">Let's work together</a></p>
+        </div>
       </div>
       {% if site.enableThirdPartyComments %}
         <hr />
@@ -24,22 +83,13 @@
           {% include "partials/global/third-party-comments.njk" %}
         </aside>
       {% endif %}
-      {% if tags %}
-        <footer class="[ post__footer ] [ pad-top-500 pad-bottom-500 ]">
-          <div class="inner-wrapper">
-            <div class="[ nav ] [ box-flex align-center ]">
-              <h2 class="font-base text-600 weight-mid">Filed under</h2>
-              <ul class="[ nav__list ] [ box-flex align-center pad-left-400 ] [ p-category ]">
-                {% for item in tags %}
-                  <li class="nav__item">
-                    <a href="/tags/{{ item }}">{{ item }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </footer>
-      {% endif %}
+    {% if not recommendedPosts %}
+      <footer class="recommended-posts">
+        {% set postListItems = recommendedPosts %}
+        {% set postListHeading = 'More from the blog' %}
+        {% include "partials/components/post-list.njk" %}
+      </footer>
+    {% endif %}
     </article>
   </main>
 {% endblock %}
