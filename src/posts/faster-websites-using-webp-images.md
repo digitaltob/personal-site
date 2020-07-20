@@ -142,9 +142,7 @@ Converting JPGs and PNGs to WebP can be done in several ways with varying levels
 
 Squoosh.app is a web app produced by Google. It's an easy and quick way to convert your PNG and JPG images to WebP (and many other image formats). There are several controls to tweak settings, including a small slider to adjust the quality and on the image preview itself a larger slider to compare quality with the original image.
 
-<div class="full-bleed">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4jPwanaGnfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<img src="/images/imagery/squoosh-app.png" width="2626" height="1724" alt="Screenshot of Squoosh App"/>
 
 Advantages, easy process, visual
 Disadvantages, one image at a time
