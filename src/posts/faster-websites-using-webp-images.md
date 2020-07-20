@@ -103,11 +103,6 @@ Results like this translate into significant savings in your quest for faster lo
 
 Many images (of any format) on the web are unoptimized, so <strong>if you are compressing/optimizing images for the first time, there will be additional savings, sometimes significant</strong>.
 
-<h3>Images on this page - An experiment</h3>
-
-While putting this article together, I thought I'd carry out an experiment. There are a number of images in this article and 
-
-
 Many developers will be aware of <a href="https://developers.google.com/web/tools/lighthouse" target="_blank" rel="noreferrer noopener">Lighthouse</a>, a Google tool for measuring page speed, giving a score out of 100. Lighthouse also suggests ways to speed up your web pages. Google uses page speed as a metric in search rankings. 
 
 A measurement of a lighthouse test involves "use next-gen image formats". WebP is a next-gen image format, the only one with strong browser support.
@@ -142,10 +137,7 @@ Converting JPGs and PNGs to WebP can be done in several ways with varying levels
 
 Squoosh.app is a web app produced by Google. It's an easy and quick way to convert your PNG and JPG images to WebP (and many other image formats). There are several controls to tweak settings, including a small slider to adjust the quality and on the image preview itself a larger slider to compare quality with the original image.
 
-<img src="/images/imagery/squoosh-app.png" width="2626" height="1724" alt="Screenshot of Squoosh App"/>
-
-Advantages, easy process, visual
-Disadvantages, one image at a time
+<img src="/images/imagery/squoosh-app.png" width="1000" height="657" alt="Screenshot of Squoosh App"/>
 
 <h3>Using Sketch to convert to WebP</h3>
 
