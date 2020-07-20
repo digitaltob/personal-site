@@ -4,8 +4,8 @@ permalink: '/contact/index.html'
 ---
 
 <h2>Let's Talk</h2>
-<p class="text-700">If you want to <strong>talk about a project</strong>, which involves any of the <a href="/services">services</a> I offer, drop me an email:</p>
-<p class="text-700"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#116;&#101;&#114;&#114;&#121;&#111;&#98;&#114;&#105;&#101;&#110;&#46;&#99;&#111;&#46;&#117;&#107;">&#104;&#101;&#108;&#108;&#111;&#64;&#116;&#101;&#114;&#114;&#121;&#111;&#98;&#114;&#105;&#101;&#110;&#46;&#99;&#111;&#46;&#117;&#107;</a></p>
+<p class="text-500 sm:text-600">If you want to <strong>talk about a project</strong>, which involves any of the <a href="/services">services</a> I offer, drop me an email:</p>
+<p class="text-500 sm:text-600"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#116;&#101;&#114;&#114;&#121;&#111;&#98;&#114;&#105;&#101;&#110;&#46;&#99;&#111;&#46;&#117;&#107;">&#104;&#101;&#108;&#108;&#111;&#64;&#116;&#101;&#114;&#114;&#121;&#111;&#98;&#114;&#105;&#101;&#110;&#46;&#99;&#111;&#46;&#117;&#107;</a></p>
 
 <h2>Other ways to stay in touch</h2>
 

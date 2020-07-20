@@ -1,14 +1,17 @@
 ---
-title: Faster websites with WebP
-date: '2020-07-12'
+title: Faster websites using WebP images 
+date: '2020-07-20'
 tags:
   - page speed
   - optimisation
   - web performance
-subheading: With growing support for Google's WebP image format and its smaller file size compared to PNG and JPG, is it now time for widespread adoption?
+subheading: Google's WebP image format has a smaller file size compared to PNG and JPG helping your websites load faster. Learn why and how to implement it.
+metaTitle: Faster websites using WebP images | Terry O'Brien 
+metaDesc: The WebP image format has a smaller file size compared to PNG and JPG helping your websites load faster. Learn why and how to implement it.
+socialImage: 'http://localhost:8080/images/social-images/faster-websites-using-webp-images.png'
 ---
 
-<p class="text-600">In this article, I'll tell you more about WebP, why it's becoming more important and how to implement it on your website today. We should briefly touch on some of the benefits of a faster website before going into more detail about how WebP images can help.</p>
+<p class="text-500 sm:text-600">In this article, I'll tell you more about WebP, why it's becoming more important and how to implement it on your website today. We should briefly touch on some of the benefits of a faster website before going into more detail about how WebP images can help.</p>
 
 <h2>What are the benefits of a faster website?</h2>
 
@@ -21,7 +24,7 @@ Research by Google has found <strong>as the page load time increases, the probab
 
 As page load time goes from:
 
-<p class="text-600"><strong>1s to 3s</strong> - the probability of bounce increases <strong>32%</strong>.<br>
+<p class="text-base sm:text-500 md:text-600"><strong>1s to 3s</strong> - the probability of bounce increases <strong>32%</strong>.<br>
 <strong>1s to 5s</strong> - the probability of bounce increases <strong>90%</strong>.<br>
 <strong>1s to 6s</strong> - the probability of bounce increases <strong>106%</strong>.<br>
 <strong>1s to 10s</strong> - the probability of bounce increases <strong>123%</strong>.</p>
@@ -50,7 +53,7 @@ Unoptimized images tend to be the <strong>most significant contributor to page b
 
 HTTP Archive's 2019 Web Almanac (which highlights the 'state of the web' from evaluating millions of web pages) states:
 
-<p class="text-600"><strong>"Looking at the 90th percentile of the distribution of page weight, images account for a whopping 5.2 MB of a roughly 7 MB page. In other words, images comprise almost 75% of the total page weight."</strong></p>
+<p class="text-base sm:text-500 md:text-600"><strong>"Looking at the 90th percentile of the distribution of page weight, images account for a whopping 5.2 MB of a roughly 7 MB page. In other words, images comprise almost 75% of the total page weight."</strong></p>
 
 <p class="text-300"><a href="https://almanac.httparchive.org/en/2019/page-weight" target="_blank" rel="noreferrer noopener">HTTP Archive - Web Almanac 2019 - Page Weight Report</a>.</p>
 
@@ -65,6 +68,8 @@ You can go even further using a newer image format designed for the web called W
 <h2>What is WebP?</h2>
 
 WebP is an image format <a href="https://developers.google.com/speed/webp" target="_blank" rel="noreferrer noopener">developed by Google back in 2010</a>. <strong>WebP provides better compression than JPG and PNG</strong>. It reduces file sizes with only minimal quality loss - so minimal that it's quite tricky to see visible differences when comparing with uncompressed images.
+
+<img src="/images/imagery/webp-logo.png" width="600" height="196" alt="WebP logo"/>
 
 Now is a good time to explain briefly <strong>lossy</strong> versus <strong>lossless compression</strong> as WebP can do both and knowing the difference between the two will help you choose the best compression for the image you have.
 
@@ -84,9 +89,9 @@ Google states:
 
 <blockquote>
 
-<p class="text-600"><strong>"WebP lossless images are 26% smaller in size compared to PNGs. WebP lossy images are 25-34% smaller than comparable JPEG images at equivalent SSIM quality index."</strong></p>
+<p class="text-base sm:text-500 md:text-600"><strong>"WebP lossless images are 26% smaller in size compared to PNGs. WebP lossy images are 25-34% smaller than comparable JPEG images at equivalent SSIM quality index."</strong></p>
 
-<p class="text-600"><strong>"Lossless WebP supports transparency (also known as alpha channel) at a cost of just 22% additional bytes. For cases when lossy RGB compression is acceptable, lossy WebP also supports transparency, typically providing 3× smaller file sizes compared to PNG."</strong></p>
+<p class="text-base sm:text-500 md:text-600"><strong>"Lossless WebP supports transparency (also known as alpha channel) at a cost of just 22% additional bytes. For cases when lossy RGB compression is acceptable, lossy WebP also supports transparency, typically providing 3× smaller file sizes compared to PNG."</strong></p>
 
 <p class="text-300">Google Developers - <a href="https://developers.google.com/speed/webp" target="_blank" rel="noreferrer noopener">A new image format for the Web</a></p>
 
@@ -96,14 +101,14 @@ Results like this translate into significant savings in your quest for faster lo
 
 <strong>These figures actually relate to <u>better</u> compression (over JPG and PNG)</strong>. 
 
-<strong>Many images (of any format) on the web are unoptimized, so if you are compressing/optimizing images for the first time, there will be additional savings, sometimes significant</strong>.
+Many images (of any format) on the web are unoptimized, so <strong>if you are compressing/optimizing images for the first time, there will be additional savings, sometimes significant</strong>.
 
 <h3>Images on this page - An experiment</h3>
 
 While putting this article together, I thought I'd carry out an experiment. There are a number of images in this article and 
 
 
-Many developers will be aware of Lighthouse, a Google tool for measuring page speed, giving a score out of 100. Lighthouse also suggests ways to speed up your web pages. Google uses page speed as a metric in search rankings. 
+Many developers will be aware of <a href="https://developers.google.com/web/tools/lighthouse" target="_blank" rel="noreferrer noopener">Lighthouse</a>, a Google tool for measuring page speed, giving a score out of 100. Lighthouse also suggests ways to speed up your web pages. Google uses page speed as a metric in search rankings. 
 
 A measurement of a lighthouse test involves "use next-gen image formats". WebP is a next-gen image format, the only one with strong browser support.
 
@@ -111,9 +116,9 @@ A measurement of a lighthouse test involves "use next-gen image formats". WebP i
 
 While WebP has been around since 2010, it has taken some time for browser support for this image format to increase to a level where it can gain widespread adoption. 
 
-As I write this, global WebP support is at 78% (check current stats) with Chrome, Firefox, and Edge all now supporting its use. You may notice Safari is missing from that list.
+As I write this, global WebP support is at 80% with Chrome, Firefox, and Edge all now supporting its use according to <a href="https://caniuse.com/#search=webp" target="_blank" rel="noreferrer noopener">CanIUse.com</a>. You may notice Safari's current versions are shown as red meaning WebP is not supported in version 13 and below. missing from that list.
 
-(Show Can I Use)
+<img src="/images/imagery/can-i-use-webp.png" width="1267" height="507" alt="WebP browser support from Can I Use website"/>
 
 <h2>When will Safari support WebP?</h2>
 
@@ -148,23 +153,24 @@ Disadvantages, one image at a time
 
 Sketch natively allows you to export an asset to WebP. To do this, select an asset on your design and in the Inspector panel on the right-hand side, open the 'Export' option. 
 
-(Screenshot of Export)
-
 Here you can change the format to WebP. Then you can hit the 'Export selected....' button.
 
-(Screen of quality setting)
+<img src="/images/imagery/sketch-export-webp-1.png" width="478" height="292" alt="WebP export settings in Sketch"/>
 
 The file/folder 'Save as' dialogue window will appear, and you can adjust the WebP quality level. You will want to play with this depending on the image to determine the lowest quality level without any significant image deterioration.
 
+<img src="/images/imagery/sketch-export-webp-2.png" width="748" height="114" alt="WebP export quality settings in Sketch"/>
+
 <h3>Using Photoshop to convert to WebP</h3>
 
-Unfortunately, Photoshop doesn't allow you to convert to WebP natively, but there are plugins to help do this. Download and install the Telegraphics WebP File Format plugin and next time you are using Photoshop, using 'Save As...' you then have the options for saving with WebP and WebP Lossless with various settings to tweak depending on your choice.
+Unfortunately, Photoshop doesn't allow you to convert to WebP natively, but there are plugins to help do this. Download and install the <a href="http://telegraphics.com.au/sw/product/WebPFormat" target="_blank" rel="noreferrer noopener">Telegraphics WebP File Format plugin</a> and next time you are using Photoshop, using 'Save As...' you then have the options for saving with WebP and WebP Lossless with various settings to tweak depending on your choice.
 
 <h3>Using Wordpress to convert to WebP</h3>
 
-Currently, Wordpress does not support the WebP image format natively. It is still possible to load WebP images on your Wordpress website via a Wordpress plugin called WebP Express.
+Currently, Wordpress does not support the WebP image format natively. It is still possible to load WebP images on your Wordpress website via a Wordpress plugin called <a href="https://en-gb.wordpress.org/plugins/webp-express/" target="_blank" rel="noreferrer noopener">WebP Express</a>.
 
-(Add image)
+
+<img src="/images/imagery/wordpress-webp-express.png" width="701" height="766" alt="WebP Express settings in Wordpress"/>
 
 <h3>Using the command line to convert to WebP</h3>
 
@@ -184,9 +190,20 @@ The requirement for a fallback image means a standard &lt;img&gt; element is not
 
 To allow a fallback image, we can use the &lt;picture&gt; element as below:
 
-(CODE)
+<div class="full-bleed">
 
-It will attempt to load the WebP image if the browser supports it. If not, it will fall back to the &lt;img&gt; element, loading the JPG/PNG instead.
+```html
+<!-- Adding a WebP image with a fallback image -->
+<picture>
+    <source src="/images/example-image.webp" type="image/webp">
+    <source src="/images/example-image.jpg" type="image/jpeg">
+    <img src="/images/example-image.jpg">
+</picture>
+```
+
+</div>
+
+It will attempt to load the WebP image if the browser supports it. If not, it will fall back to second &lt;source&gt; element to load the JPG (or PNG). In the rare case the user has a old browser which doesn't even support the &lt;picture&gt; element it will fallback to the  &lt;img&gt; element, loading the JPG (or PNG) instead.
 
 <h2>Using WebP in CSS Backgrounds</h2>
 
@@ -213,9 +230,9 @@ To help us do this, we need to set classes on the root &lt;html&gt; element. The
 
 The two classes we'll use to help us do this are:
 
-.no-webp
+<strong>.no-webp</strong>
 AND
-.web-p
+<strong>.web-p</strong>
 
 We'll only add one of these classes to the code, we'll cover how we add this into the code in a moment, firstly, lets set up the two different CSS rules we need:
 
@@ -243,22 +260,34 @@ We'll only add one of these classes to the code, we'll cover how we add this int
 So to match one of these rules we will detect if the browser supports WebP, and from this, we decide which of the two 'root' classes (.no-webp or .webp) are dynamically added to the &lt;html&gt; element using javascript.
 
 <h3>Detect if the browser supports WebP</h3>
- 
-<h4>Via a detection library - Modernizr</h4>
 
-Modernizr is a javascript library which detects HTML5 and CSS3 features in the user's browser. It can be useful if you need to consider using fallbacks if you need to support older browsers. 
+<a href="https://modernizr.com/" target="_blank" rel="noreferrer noopener">Modernizr</a> is a javascript library which detects HTML5 and CSS3 features in the user's browser. It can be useful if you need to consider using fallbacks if you need to support older browsers. 
 
-It is crucial if using javascript libraries only to use the features you need. Rather than loading in the full library which could be a large file, there is generally an option to selectively choose the features you require which results in a much smaller lightweight file. Remember, we are trying to speed up our website so the less we need to download to load the page, the better.
+It is crucial if using javascript libraries only to use the features you need. Rather than loading in the full library which could be a large file, there is generally an option to selectively choose the features you require which results in a much smaller lightweight file. Remember, we are trying to speed up our website so the less we need to download to load the page, the better. Modernizr allows you to <a href="https://modernizr.com/download?webp-setclasses&q=webp" target="_blank" rel="noreferrer noopener">selectively choose the features</a> you need. 
 
-(MODERNIZR SCREENSHOT BROWSE)
+For this example, you'll just need the 'Webp' feature.
+
+<img src="/images/imagery/modernizr-webp.png" width="1385" height="984" alt="Modernizr select features"/>
 
 When you add the script for the modernizr JS file to your HTML, you want to high up in your &lt;head&gt; section, so it has the chance to detect WebP support as soon as possible. This way, the correct background image can then be loaded.
 
-I've well aware this approach is dependent on javascript. While the web today is heavily reliant on javascript, it is worth taking a moment to highlight that not all users will have javascript enabled. This post from [ WEBSITE HERE ] explains why.
+I've well aware this approach is dependent on javascript. While the web today is heavily reliant on javascript. A small number of users will have javascript disabled, and many websites will contain javascript errors which could affect the page from loading correctly.
 
-So how do we cover occasions when javascript is disabled on not loaded for some reason?
+So how do we cover occasions when javascript is disabled or not loaded for some reason?
 
-When using modernizr, by default on the &lt;html&gt; element, we should add a 'no-js' class directly in the code. If javascript is present, modernizr will swap this out to 'js' and also add the additional classes required, in this case, either 'web-p' or 'no-webp'. So we know that if javascript is disabled, the hardcoded 'no-js' class won't be dynamically changed. In this scenario, you can use this CSS rule below to continue to load the JPG/PNG instead:
+When using modernizr, by default on the &lt;html&gt; element, we should add a 'no-js' class directly in the code. 
+
+<div class="full-bleed">
+
+```html
+<!-- Adding the default no-js class to the HTML element -->
+<html class="no-js">
+```
+
+</div>
+
+
+If javascript is present, modernizr will swap this out to 'js' and also add the additional classes required, in this case, either 'web-p' or 'no-webp'. So we know that if javascript is disabled, the hardcoded 'no-js' class won't be dynamically changed. In this scenario, you can use this CSS rule below to continue to load the JPG/PNG instead:
 
 <div class="full-bleed">
 

@@ -1,16 +1,16 @@
 {% extends 'layouts/base.njk' %}
 {# Grab other posts that aren’t this one for the 'more from the blog' feed #}
-{% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
+<!-- set recommendedPosts = helpers.getSiblingContent(collections.blog, page) -->
 {# Intro content #}
 {% set introHeading = title %}
 {% set introSummary %}
 <div class="summary-post">
   {% if subheading %}
-  <div class="summary-text">
+  <div class="summary-text pad-bottom-300">
     <p class="text-600">{{ subheading }}</p>
   </div>
   {% endif %}
-  <div class="summary-meta">
+  <div class="summary-meta pad-bottom-300">
     <dl class="[ intro__meta meta-post ] [ text-500 leading-tight ]">
     {% if date %}
       <dt>
@@ -54,7 +54,7 @@
   <main id="main-content" tabindex="-1">
     <article class="[ post ] [ h-entry ]">
       {% include "partials/components/intro.njk" %}
-      <div class="[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-900 {{ 'pad-bottom-900' if not site.enableThirdPartyComments }} text-500 ] [ e-content ]">
+      <div class="[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-900 {{ 'pad-bottom-900' if not site.enableThirdPartyComments }} text-base sm:text-500 ] [ e-content ]">
         <div class="inner-wrapper-text [ sf-flow ] ">
         {{ content | safe }}
         </div>
@@ -62,7 +62,7 @@
       <div class="[ inner-wrapper ]">
         <div class="post-newsletter">
           <h2>Thanks for reading</h2>
-          <p class="text-600">If you enjoyed reading this, <strong>join my newsletter</strong> and periodically I'll email you a <strong>collection of my latest articles</strong>. You'll also get an <strong>exclusive discount</strong> on my courses coming later in the year.</p>
+          <p class="text-base sm:text-600">If you enjoyed reading this, <strong>join my newsletter</strong> and periodically I'll email you a <strong>collection of my latest articles</strong>. You'll also get an <strong>exclusive discount</strong> on my courses coming later in the year.</p>
           <p><a class="button primary" href="https://mailchi.mp/877e42635e8c/newsletter" target="_blank" rel="noreferrer noopener">Join the newsletter</a></p>
         </div>
       </div>
@@ -73,7 +73,7 @@
             <img class="img-author" src="/images/imagery/terry-photo.png">
             <h3>Terry O'Brien</h3>
           </div>
-        <p class="text-500">Helping businesses create accessible, mobile friendly, fast websites. If I can help <strong>you</strong>, get in touch for a chat. </p>
+        <p class="text-base sm:text-500">Helping businesses create accessible, mobile friendly, fast websites. If I can help you, get in touch for a chat. </p>
         <p><a class="button primary" href="/contact">Let's work together</a></p>
         </div>
       </div>
@@ -83,13 +83,13 @@
           {% include "partials/global/third-party-comments.njk" %}
         </aside>
       {% endif %}
-    {% if not recommendedPosts %}
+    <!--if not recommendedPosts %}
       <footer class="recommended-posts">
         {% set postListItems = recommendedPosts %}
         {% set postListHeading = 'More from the blog' %}
         {% include "partials/components/post-list.njk" %}
       </footer>
-    {% endif %}
+    endif -->
     </article>
   </main>
 {% endblock %}

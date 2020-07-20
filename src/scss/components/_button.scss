@@ -23,10 +23,11 @@
 
   &.secondary {
     background-color: var(--color-action-secondary-bg);
-    color: var(--color-action-secondary-text); 
+    color: var(--color-action-secondary-text);
+    border: 5px solid #FFFFFF; 
 
     &:hover, &:focus {
-      background: #cf7310;
+      border: 5px solid #cf7310;
     }
   }
 

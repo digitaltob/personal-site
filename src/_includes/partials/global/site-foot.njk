@@ -6,13 +6,25 @@
           <article class="[ site-foot__details ] [ sf-flow measure-compact ]">
             <h2 class="font-base text-600">{{ site.name }}</h2>
             {{ site.shortDesc | markdownFilter | safe }}
-            <p>I have availability from September 2020.</p>
           </article>
         </div>
       {% endif %}
       <div>
         {% set ariaLabel = 'footer navigation' %}
-        {% include "partials/components/nav.njk" %}
+        <ul class="[ sm:box-flex align-center sm:space-before pad-top-300 ]">
+          <li class="sm:pad-left-300">
+            <a href="/about">About</a>
+            </li>
+            <li class="sm:pad-left-300">
+              <a href="/services">Services</a>
+            </li>
+            <li class="sm:pad-left-300">
+              <a href="/articles">Articles</a>
+            </li>
+            <li class="sm:pad-left-300">
+              <a href="/contact">Contact</a>
+            </li>
+        </ul>
         <!-- <theme-toggle></theme-toggle> -->
       </div>
     </div>
