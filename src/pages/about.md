@@ -1,6 +1,9 @@
 ---
 title: 'About'
 permalink: '/about/index.html'
+metaTitle: About | Terry O'Brien 
+metaDesc: Find out more about me as a development to give you an insight of how I my experience can help you.
+socialImage: '/images/social-images/default.png'
 ---
 
 <p class="text-500 sm:text-600">I'm an experienced front end developer and consultant, based in Bristol, UK. I have 15 years of commercial experience working with well-known brands such as <strong>NatWest</strong>, <strong>RBS</strong>, <strong>Royal London</strong>, <strong>RAC</strong>, and the <strong>University of Bristol</strong>.</p>

@@ -3,7 +3,7 @@
   font-family: 'Lato';
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
   src: local('Lato'), local('Lato'),
     url('/fonts/Lato-Regular.woff2') format('woff2'),
     url('/fonts/Lato-Regular.woff') format('woff');
@@ -13,7 +13,7 @@
   font-family: 'LatoBold';
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
   src: local('LatoBold'), local('LatoBold'),
     url('/fonts/Lato-Bold.woff2') format('woff2'),
     url('/fonts/Lato-Bold.woff') format('woff');
@@ -24,7 +24,7 @@
   font-family: 'Crete Round';
   font-style: normal;
   font-weight: 600;
-  font-display: swap;
+  font-display: fallback;
   src: local('Crete Round'), local('Crete Round'),
     url('/fonts/CreteRound-Regular.woff') format('woff');
 }

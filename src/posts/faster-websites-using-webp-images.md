@@ -8,7 +8,7 @@ tags:
 subheading: Google's WebP image format has a smaller file size compared to PNG and JPG helping your websites load faster. Learn why and how to implement it.
 metaTitle: Faster websites using WebP images | Terry O'Brien 
 metaDesc: The WebP image format has a smaller file size compared to PNG and JPG helping your websites load faster. Learn why and how to implement it.
-socialImage: 'http://localhost:8080/images/social-images/faster-websites-using-webp-images.png'
+socialImage: '/images/social-images/faster-websites-using-webp-images.png'
 ---
 
 <p class="text-500 sm:text-600">In this article, I'll tell you more about WebP, why it's becoming more important and how to implement it on your website today. We should briefly touch on some of the benefits of a faster website before going into more detail about how WebP images can help.</p>

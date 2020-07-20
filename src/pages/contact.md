@@ -1,6 +1,9 @@
 ---
 title: 'Contact'
 permalink: '/contact/index.html'
+metaTitle: Contact | Terry O'Brien 
+metaDesc: Let's work together. Contact me either to talk to me about the services I can offer, or to just say hello! 
+socialImage: '/images/social-images/default.png'
 ---
 
 <h2>Let's Talk</h2>
