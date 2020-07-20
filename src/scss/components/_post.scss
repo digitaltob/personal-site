@@ -78,6 +78,7 @@
     blockquote {
       border-left: 0.4rem solid #069E2D;
       margin-left: 0;
+      margin-right: 0;
       padding-left: get-size(500);
       padding-right: get-size(500);
       font-size: get-size(500);
@@ -89,7 +90,7 @@
         padding: get-size(500) 0;
 
         strong {
-          color: #04773B;
+          color: #025a2c;
         }
       }
     }
