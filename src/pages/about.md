@@ -66,4 +66,4 @@ Soon I will also be <strong>offering workshops and courses</strong> in a range o
 
 When I'm not doing the above, I spend time with my wife and two young children. When not standing on Lego littered around the house, we enjoy going on adventures (when there isn't a global pandemic). <strong>I enjoy crisps</strong>, I probably eat too many, but they are so damn tasty.
 
-I'm friendly, <strong>say hello, drop me a message</strong> either via twitter @digitaltob or via the <a href="/contact">contact page</a>. 
+I'm friendly, <strong>say hello, drop me a message</strong> either via <a href="https://twitter.com/digitaltob" target="_blank" rel="noreferrer noopener">@digitaltob on Twitter</a> or via the <a href="/contact">contact page</a>. 

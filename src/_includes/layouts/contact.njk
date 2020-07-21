@@ -9,10 +9,40 @@
       {% include "partials/components/intro.njk" %}
       <div class="[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-900 pad-bottom-900 text-500 ] [ sf-flow ] [ e-content ]">
         {{ content | safe }}
-        {% include "partials/components/contact-form.njk" %}
       </div>
     </article>
   </main>
 {% endblock %}
 
 {{ content | safe }}
+
+<script>
+document.getElementById('contactCTA').addEventListener('click', () => {
+    fathom.trackGoal('XSNWWXMD', 0);
+});
+
+document.getElementById('contactServices').addEventListener('click', () => {
+    fathom.trackGoal('4LDA5BQT', 0);
+});
+
+document.getElementById('contactLinkedin').addEventListener('click', () => {
+    fathom.trackGoal('VQHNUBOA', 0);
+});
+
+document.getElementById('contactCourseEnquiryNewsletter').addEventListener('click', () => {
+    fathom.trackGoal('SUBYJVLK', 0);
+});
+
+document.getElementById('contactTwitter').addEventListener('click', () => {
+    fathom.trackGoal('TMCERUXI', 0);
+});
+
+document.getElementById('contactNewsletterArticles').addEventListener('click', () => {
+    fathom.trackGoal('A1WDW7ZG', 0);
+});
+
+document.getElementById('contactRSS').addEventListener('click', () => {
+    fathom.trackGoal('QJQ1OJZG', 0);
+});
+</script>
+

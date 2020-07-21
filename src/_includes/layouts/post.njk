@@ -63,7 +63,7 @@
         <div class="post-newsletter">
           <h2>Thanks for reading</h2>
           <p class="text-base sm:text-600">If you enjoyed reading this, <strong>join my newsletter</strong> and periodically I'll email you a <strong>collection of my latest articles</strong>. You'll also get an <strong>exclusive discount</strong> on my courses coming later in the year.</p>
-          <p><a class="button primary" href="https://mailchi.mp/877e42635e8c/newsletter" target="_blank" rel="noreferrer noopener">Join the newsletter</a></p>
+          <p><a id="newsletterPromoBlog" class="button primary" href="https://mailchi.mp/877e42635e8c/newsletter" target="_blank" rel="noreferrer noopener">Join the newsletter</a></p>
         </div>
       </div>
       <div class="[ inner-wrapper ]">
@@ -74,7 +74,7 @@
             <h3>Terry O'Brien</h3>
           </div>
         <p class="text-base sm:text-500">Helping businesses create accessible, mobile friendly, fast websites. If I can help you, get in touch for a chat. </p>
-        <p><a class="button primary" href="/contact">Let's work together</a></p>
+        <p><a id="letsWorkTogetherAuthorBlog" class="button primary" href="/contact">Let's work together</a></p>
         </div>
       </div>
       {% if site.enableThirdPartyComments %}
@@ -95,3 +95,13 @@
 {% endblock %}
 
 {{ content | safe }}
+
+<script>
+document.getElementById('newsletterPromoBlog').addEventListener('click', () => {
+    fathom.trackGoal('ECSVHKRJ', 0);
+});
+
+document.getElementById('letsWorkTogetherAuthorBlog').addEventListener('click', () => {
+    fathom.trackGoal('MBHFWVT0', 0);
+});
+</script>
