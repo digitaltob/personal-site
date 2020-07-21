@@ -42,7 +42,7 @@ I've also worked on projects with several digital agencies such as <strong>McCan
 
 I <strong>regularly attend various events and conferences</strong> to keep up with current goings-on in the web industry. Bristol has many tech meetups which I'd recommend, including Bristol SEO, Bristol Wordpress People, Bristol JS, SWUX - South West User Experience, and Bristol Inclusive Design and Development. I also enjoy the yearly Pixel Pioneers conference.
 
-Outside of my focus of web development, I also <strong>learn more about the broader industry</strong>, including user experience, digital marketing, business and entrepreneurship via books, courses and podcasts. I have also attended the SXSW conference in the USA, which is considered one of the major tech conferences in the world. I take this additional knowledge and use it to build websites that work for my clients and their customers.
+Outside of my focus of web development, I also <strong>learn more about the broader industry</strong>, including user experience, digital marketing, business and entrepreneurship via books, courses and podcasts. I also attend conferences further afield such as SXSW Interactive in Austin, Texas. I'm also an active member of <strong>Bristol Media</strong> which is one of the largest creative networks in the UK. I take this additional knowledge and use it to build websites that work effectively for my clients and their customers.
 
 <h2>How I work</h2>
 <div class="four-two-wrapper">
@@ -52,7 +52,7 @@ Outside of my focus of web development, I also <strong>learn more about the broa
 <div class="four-container">
 <p>I am the <strong>founder of Red Spark Digital Ltd</strong>, which is a web consultancy based in Bristol working with clients across the UK. We offer a mix of design, development and user experience services. Outside of my development and optimisation work, if you require assistance with design or user experience, I can call on my colleagues to help if needed.</p>
 
-<p>I am here available to help <strong>you</strong>. <a href="/contact">Let's work together</a>.</p>
+<p>I am here available to help you. <a href="/contact">Let's work together</a>.</p>
 </div>
 </div>
 

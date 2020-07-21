@@ -21,3 +21,4 @@ For <strong>small questions</strong> or to say hello, send me a <a id="contactTw
 If you <strong>enjoy my articles</strong>, sign up to the <a id="contactNewsletterArticles" href="https://mailchi.mp/877e42635e8c/newsletter" target="_blank" rel="noreferrer noopener">newsletter</a> for infrequent emails of my latest articles.
 
 If you still use <strong>RSS</strong>, here is my <a id="contactRSS" href="https://www.terryobrien.co.uk/feed.xml">feed</a>.
+
