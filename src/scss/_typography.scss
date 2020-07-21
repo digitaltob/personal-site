@@ -1,5 +1,5 @@
 /* Main Text - Lato - 400 */
-@font-face {
+/*@font-face {
   font-family: 'Lato';
   font-weight: normal;
   font-style: normal;
@@ -7,9 +7,9 @@
   src: local('Lato'), local('Lato'),
     url('/fonts/Lato-Regular.woff2') format('woff2'),
     url('/fonts/Lato-Regular.woff') format('woff');
-}
+} */
 
-@font-face {
+/*@font-face {
   font-family: 'LatoBold';
   font-weight: normal;
   font-style: normal;
@@ -17,17 +17,17 @@
   src: local('LatoBold'), local('LatoBold'),
     url('/fonts/Lato-Bold.woff2') format('woff2'),
     url('/fonts/Lato-Bold.woff') format('woff');
-}
+}*/
 
 /* Main Text - Crete Round - 600 */
-@font-face {
+/*@font-face {
   font-family: 'Crete Round';
   font-style: normal;
   font-weight: 600;
   font-display: fallback;
   src: local('Crete Round'), local('Crete Round'),
     url('/fonts/CreteRound-Regular.woff') format('woff');
-}
+} */
 
 body {
   // Strip the unit off the size ratio to generate a line height
@@ -75,7 +75,7 @@ h4 {
 }
 
 strong {
-  font-family: 'LatoBold';
+  font-family: 'Lato';
   font-weight: 700;
   font-style: normal;
 }
