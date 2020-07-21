@@ -2,8 +2,6 @@
 title: Faster websites using WebP images 
 date: '2020-07-20'
 tags:
-  - page speed
-  - optimisation
   - web performance
 subheading: Google's WebP image format has a smaller file size compared to PNG and JPG helping your websites load faster. Learn why and how to implement it.
 metaTitle: Faster websites using WebP images | Terry O'Brien 

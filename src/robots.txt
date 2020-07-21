@@ -1,2 +1,4 @@
+Sitemap: https://www.terryobrien.co.uk/sitemap.xml
+
 User-agent: *
-Allow: /
+Disallow:
