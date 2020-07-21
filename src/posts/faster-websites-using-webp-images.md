@@ -15,7 +15,7 @@ socialImage: '/images/social-images/faster-websites-using-webp-images.png'
 
 <h3>Reduced bounce rate</h3>
 
-The longer it takes for your web pages to load hurts your content, product or business you are trying to promote to the user. The moment the user clicks on a link to load the page they want to read, the clock is ticking. You need to serve that page to the user as quickly as possible. 
+The longer it takes for your web pages to load, there is an increased chance it will hurt your content, product or business you are trying to promote to the user. The moment the user clicks on a link to load the page they want to read, the clock is ticking. You need to serve that page to the user as quickly as possible otherwise the user will be frustrated and go elsewhere. 
 
 Research by Google has found <strong>as the page load time increases, the probability of bounce increases</strong>:
 <blockquote>
@@ -67,7 +67,12 @@ You can go even further using a newer image format designed for the web called W
 
 WebP is an image format <a href="https://developers.google.com/speed/webp" target="_blank" rel="noreferrer noopener">developed by Google back in 2010</a>. <strong>WebP provides better compression than JPG and PNG</strong>. It reduces file sizes with only minimal quality loss - so minimal that it's quite tricky to see visible differences when comparing with uncompressed images.
 
-<img src="/images/imagery/webp-logo.png" width="600" height="196" alt="WebP logo"/>
+<picture>
+    <source srcset="/images/imagery/webp-logo.webp" type="image/webp">
+    <source srcset="/images/imagery/webp-logo.png" type="image/png">
+    <img src="/images/imagery/webp-logo.png" width="600" height="196" alt="WebP logo"/>
+</picture>
+
 
 WebP can handle different types of image usually best suited for either JPG or PNG under a single image format. We can briefly cover <strong>lossy</strong> versus <strong>lossless compression</strong> as WebP can do both and knowing the difference between the two will help you choose the best compression for the image you have.
 
@@ -101,6 +106,12 @@ Results like this translate into significant savings in your quest for faster lo
 
 Many images (of any format) on the web are unoptimized, so <strong>if you are compressing/optimizing images for the first time, there will be additional savings, sometimes significant</strong>.
 
+<blockquote>
+
+<p class="text-base sm:text-500 md:text-600"><strong>In the making of this article, preparing both WebP and its fallback PNG images, the file size of the WebP images are 51% smaller than the PNG equivalents.</strong></p>
+
+</blockquote>
+
 Many developers will be aware of <a href="https://developers.google.com/web/tools/lighthouse" target="_blank" rel="noreferrer noopener">Lighthouse</a>, a Google tool for measuring page speed, giving a score out of 100. Lighthouse also suggests ways to speed up your web pages. Google uses page speed as a metric in search rankings. 
 
 A measurement of a lighthouse test involves "use next-gen image formats". WebP is a next-gen image format, the only one with strong browser support.
@@ -111,7 +122,12 @@ While WebP has been around since 2010, it has taken some time for browser suppor
 
 As I write this, global WebP support is at 80% with Chrome, Firefox, and Edge all now supporting its use according to <a href="https://caniuse.com/#search=webp" target="_blank" rel="noreferrer noopener">CanIUse.com</a>. You may notice Safari's current versions are shown as red meaning WebP is not supported in version 13 and below. missing from that list.
 
-<img src="/images/imagery/can-i-use-webp.png" width="1267" height="507" alt="WebP browser support from Can I Use website"/>
+<picture>
+    <source srcset="/images/imagery/can-i-use-webp.webp" type="image/webp">
+    <source srcset="/images/imagery/can-i-use-webp.png" type="image/png">
+    <img src="/images/imagery/can-i-use-webp.png" width="1267" height="507" alt="WebP browser support from Can I Use website"/>
+</picture>
+
 
 <h2>When will Safari support WebP?</h2>
 
@@ -135,7 +151,11 @@ Converting JPGs and PNGs to WebP can be done in several ways with varying levels
 
 Squoosh.app is a web app produced by Google. It's an easy and quick way to convert your PNG and JPG images to WebP (and many other image formats). There are several controls to tweak settings, including a small slider to adjust the quality and on the image preview itself a larger slider to compare quality with the original image.
 
-<img src="/images/imagery/squoosh-app.png" width="1000" height="657" alt="Screenshot of Squoosh App"/>
+<picture>
+    <source srcset="/images/imagery/squoosh-app.webp" type="image/webp">
+    <source srcset="/images/imagery/squoosh-app.png" type="image/png">
+    <img src="/images/imagery/squoosh-app.png" width="1000" height="657" alt="Screenshot of Squoosh App"/>
+</picture>
 
 <h3>Using Sketch to convert to WebP</h3>
 
@@ -143,11 +163,19 @@ Sketch natively allows you to export an asset to WebP. To do this, select an ass
 
 Here you can change the format to WebP. Then you can hit the 'Export selected....' button.
 
-<img src="/images/imagery/sketch-export-webp-1.png" width="478" height="292" alt="WebP export settings in Sketch"/>
+<picture>
+    <source srcset="/images/imagery/sketch-export-webp-1.webp" type="image/webp">
+    <source srcset="/images/imagery/sketch-export-webp-1.png" type="image/png">
+    <img src="/images/imagery/sketch-export-webp-1.png" width="478" height="292" alt="WebP export settings in Sketch"/>
+</picture>
 
 The file/folder 'Save as' dialogue window will appear, and you can adjust the WebP quality level. You will want to play with this depending on the image to determine the lowest quality level without any significant image deterioration.
 
-<img src="/images/imagery/sketch-export-webp-2.png" width="748" height="114" alt="WebP export quality settings in Sketch"/>
+<picture>
+    <source srcset="/images/imagery/sketch-export-webp-2.webp" type="image/webp">
+    <source srcset="/images/imagery/sketch-export-webp-2.png" type="image/png">
+    <img src="/images/imagery/sketch-export-webp-2.png" width="748" height="114" alt="WebP export quality settings in Sketch"/>
+</picture>
 
 <h3>Using Photoshop to convert to WebP</h3>
 
@@ -157,8 +185,11 @@ Unfortunately, Photoshop doesn't allow you to convert to WebP natively, but ther
 
 Currently, Wordpress does not support the WebP image format natively. It is still possible to load WebP images on your Wordpress website via a Wordpress plugin called <a href="https://en-gb.wordpress.org/plugins/webp-express/" target="_blank" rel="noreferrer noopener">WebP Express</a>.
 
-
-<img src="/images/imagery/wordpress-webp-express.png" width="701" height="766" alt="WebP Express settings in Wordpress"/>
+<picture>
+    <source srcset="/images/imagery/wordpress-webp-express.webp" type="image/webp">
+    <source srcset="/images/imagery/wordpress-webp-express.png" type="image/png">
+    <img src="/images/imagery/wordpress-webp-express.png" width="701" height="766" alt="WebP Express settings in Wordpress"/>
+</picture>
 
 <h3>Using the command line to convert to WebP</h3>
 
@@ -195,8 +226,8 @@ To allow a fallback image, we can use the `<picture>` element as below:
 ```html
 <!-- Adding a WebP image with a fallback image -->
 <picture>
-    <source src="/images/example-image.webp" type="image/webp">
-    <source src="/images/example-image.jpg" type="image/jpeg">
+    <source srcset="/images/example-image.webp" type="image/webp">
+    <source srcset="/images/example-image.jpg" type="image/jpeg">
     <img src="/images/example-image.jpg">
 </picture>
 ```
@@ -269,7 +300,11 @@ It is crucial if using javascript libraries only to use the features you need. R
 
 For this example, you'll just need the 'Webp' feature.
 
-<img src="/images/imagery/modernizr-webp.png" width="1385" height="984" alt="Modernizr select features"/>
+<picture>
+    <source srcset="/images/imagery/modernizr-webp.webp" type="image/webp">
+    <source srcset="/images/imagery/modernizr-webp.png" type="image/png">
+    <img src="/images/imagery/modernizr-webp.png" width="1385" height="984" alt="Modernizr select features"/>
+</picture>
 
 When you add the script for the modernizr JS file to your HTML, you want it high up in your `<head>` section, so it has the chance to detect WebP support as soon as possible. This way, the correct background image can then be loaded.
 
