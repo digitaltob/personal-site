@@ -71,7 +71,7 @@ WebP is an image format <a href="https://developers.google.com/speed/webp" targe
 
 <img src="/images/imagery/webp-logo.png" width="600" height="196" alt="WebP logo"/>
 
-Now is a good time to explain briefly <strong>lossy</strong> versus <strong>lossless compression</strong> as WebP can do both and knowing the difference between the two will help you choose the best compression for the image you have.
+WebP can handle different types of image usually best suited for either JPG or PNG under a single image format. We can briefly cover <strong>lossy</strong> versus <strong>lossless compression</strong> as WebP can do both and knowing the difference between the two will help you choose the best compression for the image you have.
 
 <h3>What is lossy compression?</h3>
 
@@ -83,7 +83,7 @@ Lossless image compression is best suited for images that are text-based, graphi
 
 <h2>Why use WebP?</h2>
 
-The main reason to use WebP is <strong>the smaller file size it produces compared to JPG and PNG</strong>. Meaning a lighter overall page size resulting in a faster page load. 
+Alongside Google's suite of websites (including YouTube), large sites like Amazon and Netflix also use WebP images. The main reason to use WebP is <strong>the smaller file size it produces compared to JPG and PNG</strong>. Meaning a lighter overall page size resulting in a faster page load. 
 
 Google states:
 
@@ -164,6 +164,18 @@ Currently, Wordpress does not support the WebP image format natively. It is stil
 
 <h3>Using the command line to convert to WebP</h3>
 
+You can use `cwebp` to convert image files to WebP via the command line. You'll need to download and install the <a href="https://developers.google.com/speed/webp/docs/precompiled" target="_blank" rel="noreferrer noopener">precomplied utilities</a> from the Google WebP Documentation site. The basic command would be:
+
+<div class="full-bleed">
+
+```javascript
+cwebp -q 80 image.png -o image.webp
+```
+
+</div>
+
+Read the <a href="https://developers.google.com/speed/webp/docs/cwebp" target="_blank" rel="noreferrer noopener">documentation on cwebp</a> to learn more.
+
 <h3>Using other conversion methods</h3>
 
 I can only cover a selection of conversion methods for the scope of this article. Depending on the operating system, content management system, build tools, or content delivery network (CDN) used, there are many options available to let you do this.
@@ -174,11 +186,11 @@ With the addition of WebP support in Safari browsers later this year, browser su
 
 There will be a portion of users who won't be able to see WebP images in their browser (IE11 and older versions of browsers slow to update). We need to add the WebP image but with a fallback image (JPG/PNG) for when the browser doesn't support it.
 
-The requirement for a fallback image means a standard &lt;img&gt; element is not good enough in this case as it only gives the option of 1 image src, with no fallback.
+The requirement for a fallback image means a standard `<img>` element is not good enough in this case as it only gives the option of 1 image src, with no fallback.
 
 <h3>Loading WebP Images with the &lt;picture&gt; element</h3>
 
-To allow a fallback image, we can use the &lt;picture&gt; element as below:
+To allow a fallback image, we can use the `<picture>` element as below:
 
 <div class="full-bleed">
 
@@ -193,7 +205,7 @@ To allow a fallback image, we can use the &lt;picture&gt; element as below:
 
 </div>
 
-It will attempt to load the WebP image if the browser supports it. If not, it will fall back to second &lt;source&gt; element to load the JPG (or PNG). In the rare case the user has a old browser which doesn't even support the &lt;picture&gt; element it will fallback to the  &lt;img&gt; element, loading the JPG (or PNG) instead.
+It will attempt to load the WebP image if the browser supports it. If not, it will fall back to second `<source>` element to load the JPG (or PNG). In the rare case the user has a old browser which doesn't even support the `<picture>` element it will fallback to the  `<img>` element, loading the JPG (or PNG) instead.
 
 <h2>Using WebP in CSS Backgrounds</h2>
 
@@ -216,13 +228,15 @@ Now because not all browsers support WebP, this line of code would load no backg
 
 We can do this by detecting if the browser supports WebP. If it does we load the WebP background image, if not, we can load the fallback image - in this example, a JPG image.
 
-To help us do this, we need to set classes on the root &lt;html&gt; element. These classes will match a specific CSS rule to load the correct image based on browser support.
+To help us do this, we need to set classes on the root `<html>` element. These classes will match a specific CSS rule to load the correct image based on browser support.
 
 The two classes we'll use to help us do this are:
 
-<strong>.no-webp</strong>
+`.no-webp`
+
 AND
-<strong>.web-p</strong>
+
+`.web-p`
 
 We'll only add one of these classes to the code, we'll cover how we add this into the code in a moment, firstly, lets set up the two different CSS rules we need:
 
@@ -247,7 +261,7 @@ We'll only add one of these classes to the code, we'll cover how we add this int
 
 </div>
 
-So to match one of these rules we will detect if the browser supports WebP, and from this, we decide which of the two 'root' classes (.no-webp or .webp) are dynamically added to the &lt;html&gt; element using javascript.
+So to match one of these rules we will detect if the browser supports WebP, and from this, we decide which of the two 'root' classes (`.no-webp` or `.webp`) are dynamically added to the `<html>` element using javascript.
 
 <h3>Detect if the browser supports WebP</h3>
 
@@ -259,25 +273,52 @@ For this example, you'll just need the 'Webp' feature.
 
 <img src="/images/imagery/modernizr-webp.png" width="1385" height="984" alt="Modernizr select features"/>
 
-When you add the script for the modernizr JS file to your HTML, you want to high up in your &lt;head&gt; section, so it has the chance to detect WebP support as soon as possible. This way, the correct background image can then be loaded.
+When you add the script for the modernizr JS file to your HTML, you want it high up in your `<head>` section, so it has the chance to detect WebP support as soon as possible. This way, the correct background image can then be loaded.
 
-I've well aware this approach is dependent on javascript. While the web today is heavily reliant on javascript. A small number of users will have javascript disabled, and many websites will contain javascript errors which could affect the page from loading correctly.
+I'm well aware this approach is dependent on javascript. While the web today is heavily reliant on javascript. A small number of users will have javascript disabled, and many websites will contain javascript errors which could affect the page from loading correctly.
 
 So how do we cover occasions when javascript is disabled or not loaded for some reason?
 
-When using modernizr, by default on the &lt;html&gt; element, we should add a 'no-js' class directly in the code. 
+When using modernizr, by default on the `<html>` element, we should add a `no-js` class directly in the code. 
 
 <div class="full-bleed">
 
 ```html
 <!-- Adding the default no-js class to the HTML element -->
-<html class="no-js">
+<html lang="en" class="no-js">
 ```
 
 </div>
 
 
-If javascript is present, modernizr will swap this out to 'js' and also add the additional classes required, in this case, either 'web-p' or 'no-webp'. So we know that if javascript is disabled, the hardcoded 'no-js' class won't be dynamically changed. In this scenario, you can use this CSS rule below to continue to load the JPG/PNG instead:
+If javascript is present, modernizr will swap this out to `js` and also add the additional classes required, in this case, either `web-p` or `no-webp`. 
+
+Below is what the modernizr script does with the class attribute on the `<html>` element. In <strong>Chrome, which supports WebP</strong> (and its supporting WebP features), it dynamically updates to the below:
+
+<div class="full-bleed">
+
+```html
+<!-- When Modernizr WebP script is added - CHROME (supports WebP) -->
+<html lang="en" class="js webp webp-alpha webp-animation webp-lossless">
+```
+
+</div>
+
+But if using a <strong>browser that doesn't support WebP, such as Safari 13</strong>, the code is dynamically updated to:
+
+<div class="full-bleed">
+
+```html
+<!-- When Modernizr WebP script is added - SAFARI 13 (DOES NOT support WebP) -->
+<html lang="en" class="js no-webp">
+```
+
+</div>
+
+This is how we can target different classes via the CSS (referenced above) to load different CSS backgrounds.
+
+
+If javascript is disabled (or there is a javascript error causing issues on the page), the hardcoded `no-js` class won't be dynamically changed. In this scenario, you can use this CSS rule below to continue to load the JPG/PNG instead:
 
 <div class="full-bleed">
 
@@ -290,9 +331,15 @@ If javascript is present, modernizr will swap this out to 'js' and also add the 
 
 </div>
 
-One thing I'd recommend when adding this .no-js CSS rule is to hold it in a separate CSS file to the rest of the CSS. Load this CSS file from within a &lt;noscript&gt; tag in the head as we only want this CSS (and the image) to be requested/loaded if javascript is disabled.
+One thing I'd recommend when adding this final `.no-js` CSS rule is to hold it in a separate CSS file to the rest of the CSS. Load this CSS file from within a `<noscript>` tag in the head as we only want this CSS (and the image) to be requested/loaded if javascript is disabled.
 
 <h2>Conclusion</h2>
 
-The WebP image format is the
+The WebP image format has <strong>better compression and optimization techniques</strong> than available with JPG and PNG formats. While <strong>fallbacks are still required for some older browsers</strong>, the <strong>benefit of switching to use WebP</strong> for the majority of your users will help page loads on your website which has the <strong>potential to decrease bounce rate, increase conversion, save money and even the environment</strong>. 
+
+Large companies like Amazon and Netflix have moved to use WebP images alongside Google sites such as YouTube. Apple have decided 10 years after WebP was created that it is finally time to add it to its Safari browser for Mac and iOS later in 2020 - WebP isn't going anywhere. It is something you should consider to help improve your page speed scores which are becoming a stronger search ranking factor.
+
+While <strong>switching to WebP</strong> images on existing large websites <strong>could involve significant work</strong>, there are ways to quickly serve WebP images with options on CDN services and specialist image CDNs. Content management systems such as WordPress have plugins available to help make the switch easier. <strong>Each situation will be different</strong> but there is no doubt, <strong>faster websites perform better</strong>. Image optimisation tends to be low hanging fruit in the quest for reducing page weights.
+
+Will you be using the WebP image format?
 
