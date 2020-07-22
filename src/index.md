@@ -5,7 +5,7 @@ postsHeading: Recent articles
 archiveButtonText: See all articles
 metaTitle: Terry O'Brien - Development & Optimisation Consultant 
 metaDesc: Helping businesses create accessible, mobile friendly, fast loading websites. Let me help you build websites that convert and help your users.
-socialImage: '/images/social-images/default.png'
+socialImage: 'https://www.terryobrien.co.uk/images/social-images/default.png'
 introCta1Btn: 'More about me'
 introCta1Url: '/about'
 introCta2Btn: "Let's work together"

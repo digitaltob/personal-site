@@ -3,7 +3,7 @@ title: 'Services'
 permalink: '/services/index.html'
 metaTitle: Services | Terry O'Brien 
 metaDesc: I offer services in web development and optimisation covering accessibility, web performance and technical SEO. Learn more.
-socialImage: '/images/social-images/default.png'
+socialImage: 'https://www.terryobrien.co.uk/images/social-images/default.png'
 ---
 
 <p class="text-500 sm:text-600">I offer a range of services to businesses. <strong>My primary service is building websites</strong>. For companies with existing websites, <strong>I also provide optimisation services</strong> to improve <strong>accessibility</strong>, <strong>web performance</strong> and <strong>technical SEO</strong>.</p>
