@@ -96,9 +96,9 @@ Connect with me on <a href="https://www.linkedin.com/in/mrtobrien" target="_blan
 
 <hr />
 
-<h2>Teaching (Coming Soon)</h2>
+<h2>Courses (Coming Soon)</h2>
 
-<p class="text-500 sm:text-600">New for 2020, I will be sharing the knowledge gained in the last 15 years working on large commercial, public-facing websites. Apart from sharing long-form articles here, I will be <strong>creating online courses</strong>, starting with a course on <strong>web accessibility later this year</strong>. Other courses (based on the services I provide above) will follow.</p>
+<p class="text-500 sm:text-600">Starting in late 2021, I will be sharing the knowledge gained in the last 15 years working on large commercial, public-facing websites. Apart from sharing long-form articles here, I will be <strong>creating online courses</strong>, starting with a course on <strong>web accessibility later this year</strong>. Other courses (based on the services I provide above) will follow.</p>
 
 I will also be <strong>open to holding workshops</strong> with businesses (who have existing development teams), more information on this soon.
 
