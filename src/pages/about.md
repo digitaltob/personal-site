@@ -6,7 +6,7 @@ metaDesc: Find out more about me as a development to give you an insight of how 
 socialImage: 'https://www.terryobrien.co.uk/images/social-images/default.png'
 ---
 
-<p class="text-500 sm:text-600">I'm an experienced front end developer and consultant, based in Bristol, UK. I have 15 years of commercial experience working with well-known brands such as <strong>NatWest</strong>, <strong>RBS</strong>, <strong>Royal London</strong>, <strong>RAC</strong>, and the <strong>University of Bristol</strong>.</p>
+<p class="text-500 sm:text-600">I'm an experienced front end developer and consultant, based in Bristol, UK. I have 15 years of commercial experience working with well-known brands such as <strong>NatWest</strong>, <strong>RBS</strong>, <strong>Royal London</strong>, <strong>RAC</strong>, <strong>NewDay Cards</strong> and the <strong>University of Bristol</strong>.</p>
 <p>
 I've also worked on projects with several digital agencies such as <strong>McCann</strong>, <strong>EMO Unlimited</strong>, and <strong>Oakwood Media</strong>. <a href="https://www.linkedin.com/in/mrtobrien" target="_blank" rel="noreferrer noopener">Connect with me on LinkedIn</a> to read over 10 recommendations/testimonials from these companies.</p>
 
